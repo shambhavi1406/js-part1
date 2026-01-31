@@ -36,3 +36,75 @@ let someNumber = 56
 let stringNumber = String(someNumber)
 console.log(stringNumber)
 console.log(typeof stringNumber)
+let value = 3
+let negvalue = -value
+console.log(negvalue);
+console.log(2+2)
+console.log(2*2)
+console.log(2**2)
+console.log(2%3)
+    let str1="hello"
+    let str2=" Shambhavi"
+    let str3 = str1 + str2
+    console.log(str3)
+    console.log("1"+2+2)
+    console.log(1+1+"2")
+    console.log("1"+2)
+console.log(+true)
+console.log(+"")
+let gamecounter = 100
+gamecounter++
+console.log(gamecounter)
+
+console.log("2">1)
+console.log("02">1)
+console.log(null>0)
+console.log(null== 0)
+console.log(null>= 0)
+//console.log("2"===2) double equal
+
+const id = Symbol('123')
+const anotherid = Symbol('123')
+console.log(id===anotherid)
+
+//Reference(Non-primitive)
+
+//Arrays,Objects,Functions
+ const heroes = ["superwoman", "catwoman" , "powerrangers"] ; // arrays
+    let obj1 = {
+        name:"Shambhavi" , // objects
+        age:21,
+    }
+    
+    const myFunction = function(){
+        console.log("this is a function")
+    }
+    //*********************************************************************************** */
+      // memory- stack(primtive) and heap(non-primitve)
+      // primitve datatypes get a copy of the original value whereas nonprimitve data types
+      // direct refernce 
+      let myName = "Shambhavi"
+      let myNickname = myName
+      myNickname = "khushu"
+      console.log(myName)
+      console.log(myNickname)  // primitve datatype or stack memory no change in orginal 
+                               // myName even tho myNickname is changed
+                                 
+      let userone = {
+        useremail:"user@gmail.com",
+        userupi:"user@ybl"
+      }
+      let usertwo = userone
+      usertwo.email="user2@gmail.com" //here both the values in userone.email and 
+                                      // usertwo.email change as usertwo takes direct reference from userone
+      console.log(userone.email)
+      console.log(usertwo.email)
+
+      //*********************************************************************************** */
+      // string functions
+      let Name= "Shambhavi"
+      let repocount=50
+      console.log("hello i am " + Name +" and my repocount is " + repocount)
+      console.log(`hello my name is ${Name} and my repocount is ${repocount}`)
+      const gamename = new String('shambhaviii') 
+      console.log(gamename[3])
